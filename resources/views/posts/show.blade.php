@@ -15,6 +15,7 @@
             {{ method_field('delete') }}
             <input type="submit" style="display:none">
             <p class="delete">[<span onclick="return deletePost(this);">delete</span>]</p>
+            <a href="">{{ $post->category->name }}</a>
         </form>
         <p class="edit">[<a href="/posts/{{ $post->id }}/edit">edit</a>]</p>
         <h1 class="title">
